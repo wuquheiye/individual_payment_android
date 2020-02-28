@@ -1,0 +1,97 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.notificationservicelisten"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="20"
+8-->D:\Android\AndroidProject\NotificationServiceListen\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->D:\Android\AndroidProject\NotificationServiceListen\app\src\main\AndroidManifest.xml
+10
+11    <!-- <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> -->
+12    <!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> -->
+13    <!-- <uses-permission android:name="android.permission.WAKE_LOCK" /> -->
+14    <!-- <uses-permission android:name="android.permission.DISABLE_KEYGUARD" /> -->
+15    <!-- 网络权限 -->
+16    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+16-->D:\Android\AndroidProject\NotificationServiceListen\app\src\main\AndroidManifest.xml:11:5-75
+16-->D:\Android\AndroidProject\NotificationServiceListen\app\src\main\AndroidManifest.xml:11:22-73
+17    <uses-permission android:name="android.permission.INTERNET" />
+17-->D:\Android\AndroidProject\NotificationServiceListen\app\src\main\AndroidManifest.xml:12:5-66
+17-->D:\Android\AndroidProject\NotificationServiceListen\app\src\main\AndroidManifest.xml:12:22-64
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->D:\Android\AndroidProject\NotificationServiceListen\app\src\main\AndroidManifest.xml:13:5-78
+18-->D:\Android\AndroidProject\NotificationServiceListen\app\src\main\AndroidManifest.xml:13:22-76
+19
+20    <!-- 闪光灯权限 -->
+21    <uses-permission android:name="android.permission.FLASHLIGHT" />
+21-->D:\Android\AndroidProject\NotificationServiceListen\app\src\main\AndroidManifest.xml:16:5-68
+21-->D:\Android\AndroidProject\NotificationServiceListen\app\src\main\AndroidManifest.xml:16:22-66
+22    <!-- 解锁屏幕需要的权限 -->
+23    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+23-->D:\Android\AndroidProject\NotificationServiceListen\app\src\main\AndroidManifest.xml:18:5-75
+23-->D:\Android\AndroidProject\NotificationServiceListen\app\src\main\AndroidManifest.xml:18:22-72
+24    <!-- 申请电源锁需要的权限 -->
+25    <uses-permission android:name="android.permission.WAKE_LOCK" />
+25-->D:\Android\AndroidProject\NotificationServiceListen\app\src\main\AndroidManifest.xml:20:5-68
+25-->D:\Android\AndroidProject\NotificationServiceListen\app\src\main\AndroidManifest.xml:20:22-65
+26    <!-- 震动权限 -->
+27    <uses-permission android:name="android.permission.VIBRATE" />
+27-->D:\Android\AndroidProject\NotificationServiceListen\app\src\main\AndroidManifest.xml:22:5-66
+27-->D:\Android\AndroidProject\NotificationServiceListen\app\src\main\AndroidManifest.xml:22:22-63
+28
+29    <application
+29-->D:\Android\AndroidProject\NotificationServiceListen\app\src\main\AndroidManifest.xml:24:5-50:19
+30        android:allowBackup="true"
+30-->D:\Android\AndroidProject\NotificationServiceListen\app\src\main\AndroidManifest.xml:25:9-35
+31        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+31-->[androidx.core:core:1.1.0] C:\Users\机械师\.gradle\caches\transforms-2\files-2.1\292864c6d50f98870bb1ff3a00144dd1\core-1.1.0\AndroidManifest.xml:24:18-86
+32        android:debuggable="true"
+33        android:icon="@mipmap/ic_launcher"
+33-->D:\Android\AndroidProject\NotificationServiceListen\app\src\main\AndroidManifest.xml:26:9-43
+34        android:label="@string/app_name"
+34-->D:\Android\AndroidProject\NotificationServiceListen\app\src\main\AndroidManifest.xml:27:9-41
+35        android:roundIcon="@mipmap/ic_launcher_round"
+35-->D:\Android\AndroidProject\NotificationServiceListen\app\src\main\AndroidManifest.xml:28:9-54
+36        android:supportsRtl="true"
+36-->D:\Android\AndroidProject\NotificationServiceListen\app\src\main\AndroidManifest.xml:29:9-35
+37        android:testOnly="true"
+38        android:theme="@style/AppTheme" >
+38-->D:\Android\AndroidProject\NotificationServiceListen\app\src\main\AndroidManifest.xml:30:9-40
+39        <activity android:name="com.example.notificationservicelisten.MainActivity" >
+39-->D:\Android\AndroidProject\NotificationServiceListen\app\src\main\AndroidManifest.xml:31:9-37:20
+39-->D:\Android\AndroidProject\NotificationServiceListen\app\src\main\AndroidManifest.xml:31:19-47
+40            <intent-filter>
+40-->D:\Android\AndroidProject\NotificationServiceListen\app\src\main\AndroidManifest.xml:32:13-36:29
+41                <action android:name="android.intent.action.MAIN" />
+41-->D:\Android\AndroidProject\NotificationServiceListen\app\src\main\AndroidManifest.xml:33:17-69
+41-->D:\Android\AndroidProject\NotificationServiceListen\app\src\main\AndroidManifest.xml:33:25-66
+42
+43                <category android:name="android.intent.category.LAUNCHER" />
+43-->D:\Android\AndroidProject\NotificationServiceListen\app\src\main\AndroidManifest.xml:35:17-77
+43-->D:\Android\AndroidProject\NotificationServiceListen\app\src\main\AndroidManifest.xml:35:27-74
+44            </intent-filter>
+45        </activity>
+46        <activity android:name="com.example.notificationservicelisten.service.NotificationMonitorService" />
+46-->D:\Android\AndroidProject\NotificationServiceListen\app\src\main\AndroidManifest.xml:38:9-72
+46-->D:\Android\AndroidProject\NotificationServiceListen\app\src\main\AndroidManifest.xml:38:19-69
+47
+48        <!-- 开启消息通知监听 -->
+49        <service
+49-->D:\Android\AndroidProject\NotificationServiceListen\app\src\main\AndroidManifest.xml:42:9-48:19
+50            android:name="com.example.notificationservicelisten.service.NotificationMonitorService"
+50-->D:\Android\AndroidProject\NotificationServiceListen\app\src\main\AndroidManifest.xml:43:13-63
+51            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" >
+51-->D:\Android\AndroidProject\NotificationServiceListen\app\src\main\AndroidManifest.xml:44:13-87
+52            <intent-filter>
+52-->D:\Android\AndroidProject\NotificationServiceListen\app\src\main\AndroidManifest.xml:45:13-47:29
+53                <action android:name="android.service.notification.NotificationListenerService" />
+53-->D:\Android\AndroidProject\NotificationServiceListen\app\src\main\AndroidManifest.xml:46:17-99
+53-->D:\Android\AndroidProject\NotificationServiceListen\app\src\main\AndroidManifest.xml:46:25-96
+54            </intent-filter>
+55        </service>
+56    </application>
+57
+58</manifest>
